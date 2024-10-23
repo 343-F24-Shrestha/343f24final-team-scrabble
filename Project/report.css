@@ -1,0 +1,75 @@
+/* General styling for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Main section styling */
+  main {
+    padding: 20px;
+  }
+  
+  /* Form container */
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form input and label styles */
+  form label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  /* Submit button styling */
+  button[type="submit"] {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ffcc00;
+    color: #343a40;
+  }
+  
+  /* Report heading and text */
+  aside h1 {
+    text-align: center;
+    color: #343a40;
+  }
+  
+  aside p {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
