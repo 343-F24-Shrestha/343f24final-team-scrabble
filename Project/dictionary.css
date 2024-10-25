@@ -36,10 +36,14 @@ main p {
 
 .search-bar input {
     flex: 1;
-    margin-right: 10px;
+    padding: 0px;
 }
 
 #words {
     padding-bottom: 1%;
     text-align: center;
+}
+
+main div {
+    padding: 2%;
 }
