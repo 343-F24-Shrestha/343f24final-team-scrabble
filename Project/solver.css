@@ -1,0 +1,83 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+}
+
+aside a {
+    margin: 20px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+.grid {
+    display: grid;
+    background:  #eeecd7;
+    grid-template-columns: repeat(15, 40px);
+    grid-template-rows: repeat(15, 40px);
+    gap: 2px;
+    margin: 20px;
+}
+
+.grid input {
+    background:  #c5bfa5;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 16px;
+}
+
+.input-grid {
+    background:  #eeecd7;
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: 40px;
+    gap: 2px;
+    margin: 20px 0;
+}
+
+.input-grid input {
+    background:  #c5bfa5;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(15, 30px);
+        grid-template-rows: repeat(15, 30px); 
+    }
+
+    .input-grid {
+        grid-template-columns: repeat(7, 30px);
+        grid-template-rows: 30px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(15, 25px);
+        grid-template-rows: repeat(15, 25px);
+    }
+
+    .input-grid {
+        grid-template-columns: repeat(7, 25px);
+        grid-template-rows: 25px; 
+    }
+}
