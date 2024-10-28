@@ -19,6 +19,17 @@
     vertical-align: top;
 }
 
+#image {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scrabble-tiles {
+    width: 50vw;
+}
+
 #navi > ul > li {
     list-style-type: none;
     padding-top: 8px;
