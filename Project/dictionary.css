@@ -47,3 +47,38 @@ main p {
 main div {
     padding: 2%;
 }
+
+#words {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: left;
+}
+
+#words h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+#words h2 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#words p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#words p i {
+    font-style: italic;
+}
