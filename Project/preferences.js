@@ -9,8 +9,6 @@ function loadPreferences() {
         if (navbar) navbar.style.backgroundColor = savedPreferences.headerColor;
 
         document.body.style.backgroundColor = savedPreferences.bgColor;
-        document.body.style.color = savedPreferences.textColor;
-        document.body.style.fontFamily = savedPreferences.fontFamily;
 
         // Set the input values to match the saved preferences
         const hColor = document.getElementById("h-color");
@@ -37,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const hColor = document.getElementById("h-color");
     const bgColor = document.getElementById("bg-color");
     const submit = document.getElementById("submit");
+    const reset = document.getElementById("default");
 
     if (form && submit) {
         submit.addEventListener("click", (e) => {
@@ -57,7 +56,35 @@ document.addEventListener("DOMContentLoaded", () => {
             // Save preferences to localStorage
             const preferences = {
                 headerColor,
-                bgColor: backgroundColor,
+                bgColor: backgroundColor
+            };
+            savePreferences(preferences); // Save preferences globally
+        });
+        reset.addEventListener("click", (e) => {
+            e.preventDefault(); // Prevent page reload
+        
+            // Define default color values
+            const defaultHeaderColor = "#ffffff"; // Replace with your actual default header color
+            const defaultBackgroundColor = "#f8f9fa"; // Replace with your actual default background color
+        
+            // Apply default styles to the page
+            const header = document.querySelector("header");
+            const navbar = document.querySelector(".navbar");
+            if (header) header.style.backgroundColor = defaultHeaderColor;
+            if (navbar) navbar.style.backgroundColor = defaultHeaderColor;
+        
+            document.body.style.backgroundColor = defaultBackgroundColor;
+        
+            // Update color pickers in the form
+            const hColor = document.getElementById("h-color");
+            const bgColor = document.getElementById("bg-color");
+            if (hColor) hColor.value = defaultHeaderColor;
+            if (bgColor) bgColor.value = defaultBackgroundColor;
+        
+            // Save default preferences to localStorage
+            const preferences = {
+                headerColor: defaultHeaderColor,
+                bgColor: defaultBackgroundColor
             };
             savePreferences(preferences); // Save preferences globally
         });

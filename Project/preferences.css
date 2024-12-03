@@ -6,19 +6,20 @@ main {
 
 #form-area {
     display: flex;
-    justify-content: center; /* Centers the form box horizontally */
-    align-items: center; /* Centers the form box vertically */
-    min-height: 60vh; /* Ensures the form is vertically aligned in the main area */
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
 }
 
 .preferences {
-    background-color: #d2b48c; /* Tan background for the form box */
+    background-color: #d2b48c;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid black;
     width: 100%;
-    max-width: 500px; /* Limits the maximum width of the form */
-    text-align: center; /* Centers text inside the box */
+    max-width: 500px;
+    text-align: center;
+    position: relative;
 }
 
 .preferences h1 {
@@ -43,14 +44,14 @@ select {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    box-sizing: border-box; /* Ensures consistent sizing */
+    box-sizing: border-box;
 }
 
 #submit {
     display: block;
-    margin: 20px auto 0; /* Centers the button horizontally */
+    margin: 20px auto 0;
     padding: 10px 20px;
-    background-color: #5f5f5f; /* Green background for the button */
+    background-color: #5f5f5f;
     color: white;
     border: none;
     border-radius: 5px;
@@ -59,6 +60,22 @@ select {
     font-weight: bold;
 }
 
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5f5f5f;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
 #submit:hover {
-    background-color: #242424; /* Slightly darker green on hover */
+    background-color: #242424;
+}
+
+button:hover {
+    background-color: #242424;
 }
